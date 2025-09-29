@@ -6,6 +6,7 @@ import NavItems from "@/components/NavItems";
 import UserDropDown from "@/components/UserDropDown";
 
 
+
 const Header = () => {
     return (
         <header className="sticky top-0 bg-black text-white">
