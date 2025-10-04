@@ -27,7 +27,11 @@ const Header = () => {
                     <NavItems />
                 </nav>
 
-                <UserDropDown/>
+                <UserDropDown user={{
+                    id: '',
+                    name: '',
+                    email: ''
+                }} initialStocks={[]}/>
 
             </div>
 

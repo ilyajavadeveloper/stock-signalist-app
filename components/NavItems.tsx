@@ -13,6 +13,7 @@ const NavItems = () => {
         return pathName.startsWith(path);
     };
 
+
     return (
         <ul className="flex flex-col sm:flex-row p-2 gap-3 sm:gap-20 font-medium">
             {NAV_ITEMS.map(({ href, label }) => (

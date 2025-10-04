@@ -1,3 +1,4 @@
+/*
 'use server';
 
 import { getDateRange, validateArticle, formatArticle } from '@/lib/utils';
@@ -28,7 +29,7 @@ export async function getNews(symbols?: string[]): Promise<MarketNewsArticle[]> 
         const token = process.env.FINNHUB_API_KEY ?? NEXT_PUBLIC_FINNHUB_API_KEY;
         if (!token) {
             throw new Error('FINNHUB API key is not configured');
-        }
+        }z
         const cleanSymbols = (symbols || [])
             .map((s) => s?.trim().toUpperCase())
             .filter((s): s is string => Boolean(s));
@@ -178,3 +179,4 @@ export const searchStocks = cache(async (query?: string): Promise<StockWithWatch
         return [];
     }
 });
+*/

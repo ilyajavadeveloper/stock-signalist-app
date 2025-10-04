@@ -1,12 +1,12 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { CommandDialog, CommandEmpty, CommandInput, CommandList } from "@/components/ui/command"
 import {Button} from "@/components/ui/button";
 import {Loader2,  TrendingUp} from "lucide-react";
 import Link from "next/link";
-import {CommandDialog, CommandEmpty, CommandInput, CommandList} from "@/components/ui/command";
-import {useDebounce} from "@/hooks/UseDebounce";
 import {searchStocks} from "@/lib/actions/finnhub.actions";
+import {useDebounce} from "@/hooks/UseDebounce";
 
 export default function SearchCommand({ renderAs = 'button', label = 'Add stock', initialStocks }: SearchCommandProps) {
     const [open, setOpen] = useState(false)
@@ -46,7 +46,7 @@ export default function SearchCommand({ renderAs = 'button', label = 'Add stock'
 
     useEffect(() => {
         debouncedSearch();
-    }, [debouncedSearch, searchTerm]);
+    }, [searchTerm]);
 
     const handleSelectStock = () => {
         setOpen(false);
