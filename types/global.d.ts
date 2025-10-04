@@ -163,6 +163,12 @@ declare global {
         related: string;
         image?: string;
     };
+    type UserForNewsEmail = {
+        _id?: string;
+        id?: string;
+        email: string;
+        name?: string;
+    };
 
     type WatchlistNewsProps = {
         news?: MarketNewsArticle[];
