@@ -1,11 +1,12 @@
 'use client';
 
 import { useForm } from 'react-hook-form';
-import { Button } from '@/components/ui/button';
-import {signInWithEmail} from "@/lib/actions/auth.actions";
+import { Button } from '@/components/ui/button';;
+import {toast} from "sonner";
 import {useRouter} from "next/navigation";
 import InputField from "@/forms/InputField";
 import FooterLink from "@/forms/FooterLink";
+import {signInWithEmail} from "@/lib/actions/auth.actions";
 
 const SignIn = () => {
     const router = useRouter()
