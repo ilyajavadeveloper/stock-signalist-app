@@ -28,9 +28,9 @@ const Header = () => {
                 </nav>
 
                 <UserDropDown user={{
-                    id: '',
-                    name: '',
-                    email: ''
+                    id: '228444123',
+                    name: 'iluha loh',
+                    email: 'iluhaloh@gmail.com'
                 }} initialStocks={[]}/>
 
             </div>
