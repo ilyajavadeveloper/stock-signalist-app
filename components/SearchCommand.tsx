@@ -46,7 +46,7 @@ export default function SearchCommand({ renderAs = 'button', label = 'Add stock'
 
     useEffect(() => {
         debouncedSearch();
-    }, [searchTerm]);
+    }, [debouncedSearch, searchTerm]);
 
     const handleSelectStock = () => {
         setOpen(false);
